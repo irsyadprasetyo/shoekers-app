@@ -6,6 +6,59 @@
     android:background="#FFFFFF"
     android:padding="16dp">
 
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F0F0"
+        android:orientation="horizontal"
+        android:padding="11dp">
+
+        <ImageView
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:layout_marginRight="70dp"
+            android:src="@drawable/z_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHOE.KERS"
+            android:textColor="#000000"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Page Info -->
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/z_icon_back_button" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginBottom="10dp"
+            android:text="Product Detail"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
     <ImageView
         android:id="@+id/productDetailImage"
         android:layout_width="match_parent"
@@ -17,6 +70,7 @@
         android:id="@+id/productDetailName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="#000000" />
@@ -25,15 +79,15 @@
         android:id="@+id/productDetailPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
         android:textSize="20sp"
-        android:textColor="#FF0000"
-        android:layout_marginTop="8dp" />
+        android:textColor="#000000" />
 
     <TextView
         android:id="@+id/productDetailDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="18dp"
         android:textColor="#666666" />
 </LinearLayout>
