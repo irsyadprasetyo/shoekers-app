@@ -1,5 +1,7 @@
 package com.example.uaspbobj;
 
+import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -21,5 +23,13 @@ public class ProductDetailActivity extends AppCompatActivity {
         productPrice.setText(getIntent().getStringExtra("productPrice"));
         productImage.setImageResource(getIntent().getIntExtra("productImage", 0));
         productDescription.setText(getIntent().getStringExtra("productDescription"));
+
+        ImageView btnBack = findViewById(R.id.btnBack);
+
+        btnBack.setOnClickListener(v -> {
+            btnBack.setImageResource(R.drawable.z_icon_back_button);
+            Intent intent = new Intent(ProductDetailActivity.this, HomeActivity.class);
+            startActivity(intent);
+        });
     }
 }

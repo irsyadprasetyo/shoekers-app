@@ -1,5 +1,5 @@
 # shoekers-app
 
 Default user:
-- Admin
+- admin
 - 123
