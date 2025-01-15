@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:background="#F8F8F8"
+    android:gravity="center"
+    android:layout_gravity="bottom">
+
+    <!-- Home Icon -->
+    <ImageView
+        android:id="@+id/ivHome"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_home_black"
+        android:layout_margin="65dp"
+        app:tint="#000000" />
+
+    <!-- Cart Icon -->
+    <ImageView
+        android:id="@+id/ivCart"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:src="@drawable/z_icon_cart"
+        android:layout_margin="65dp"
+        app:tint="#000000" />
+
+    <!-- Account Icon -->
+    <ImageView
+        android:id="@+id/ivAccount"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/z_icon_acc"
+        android:layout_margin="65dp"
+        app:tint="#000000" />
+</LinearLayout>
